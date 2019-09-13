@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+<meta charset="utf-8"/>
 <head>
-    <link rel="stylesheet" type="text/css" href="resources/css/estilo.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/cadastro.css"/>
+    
 </head>
 <body>
-    teste
+   
+    <div class="content">
+        <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img  src="resources/images/logofibra.png" class="logo"  alt="logo">
+                        <h1>Bem vindo!</h1>
+                        <h2>Acesse nosso wi-fi gratuitamente!</h2>
+                    </div>
+                </div>
+                <div class="form-cadastro">
+                    <div class="form-group">
+                    <input type="text" class="form-name form-control" name='name' id="nome" maxlength="100" placeholder="Nome:" required>      
+                    </div>
+                    <div class="form-group">
+                            <input type="email" class="form-email form-control"  name='username' id="username" placeholder="Email:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="password"  class="form-password form-control" name='password' id="password" maxlength="20" placeholder="Senha:" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="text" class="form-celular form-control" name='celphone' id="auth_user" maxlength="13"  pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" placeholder="Celular:" required>
+                    <script type="text/javascript">$("#auth_user").mask("(00) 0000-00009");</script>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-warning btn form-control" type="submit" name="submit" value="Cadastrar"> Cadastrar </button>
+                    </div>     
+                </div>
+                
+
+
+        </div>
+    </div>
+
+
 </body>
 
 </html>
