@@ -1,51 +1,57 @@
-html{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    min-width: auto;
+body{
+    background-color: #212121;
+    font-family: 'Montserrat', sans-serif !important;
+    height: 100% ;
+    width: 100%;
+    
+}
+.container-fluid{
+    width: 370px;
+    height: 700px;
+    background: #333333;
+    
+   
+    
+}
 
+h1{
+   
+    font-size: 23px; 
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif !important;
+
+    
+}
+h2{
+    font-family: 'Montserrat', sans-serif !important;
+    margin-top: -12px;
+    font-size: 23px;
+    text-align: center;
+    color: white;
 }
 
 .logo{
-    height: 120px;
+    margin-top: 70px;
+    height: 100px;
     max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     
 }
-body{
-    background-color:gray;
-}
-h1{
-    font-size: 30px; 
-    text-align: center;
-    color: white;
-    font-weight: bold;
-
-    
-}
-h2{
-    font-size: 15px;
-    text-align: center;
-    color: white;
-}
-.content{
-    height: 100%;
+.form-control{
+    display: block;
     width: 100%;
-}
-.container{
-    width: 50%;
-    height: 100%;
-    background: black;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center
-}
-.form-group{
-    text-align: center; 
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
 }
 .form-cadastro{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .content-term{
     border: 1px;
@@ -66,10 +72,21 @@ h2{
    margin-left: auto;
    margin-right: auto; 
 }
-table{
-    margin-left: auto;
-    margin-right: auto;
+
+
+.form-group{
+    margin: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
-.check{
-    margin-top: 0;
+
+.table{
+    margin-top: 40px;
+    border-top: 0 !important;
+}
+.table > tbody > tr > td, tfoot, th{
+    border-top: 0 !important;
+}
+.form-check-input{
+    margin-left: 0 !important;
 }
