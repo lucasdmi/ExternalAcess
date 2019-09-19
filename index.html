@@ -1,30 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <meta charset="utf-8"/>
-  <!-- CSS dependencies -->
+<head>
+
+<!-- CSS dependencies -->
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
 <link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
-  <!-- Bootstrap 4 dependency -->
+<!-- Bootstrap 4 dependency -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- bootbox code -->
+
+<!-- bootbox code -->
 <script src="node_modules/bootbox/dist/bootbox.min.js"></script>
 <script src="node_modules/bootbox/dist/bootbox.locales.min.js"></script>
 
-<head>
+<script src="resources/js/index.js"></script>
 
 </head>
 <body>
 
-    
-        <div class="contentbox">
-            <h1>teste</h1>
+<div class="container-fluid">            
+        <div class="row">
+            <div class="g-circle mx-auto d-block" >
+                <img  src="resources/images/logofibra1.png" class="logo"  alt="logo">
+            </div>
         </div>
-    
+        <div class="row">
+            <div class="g-circle mx-auto d-block">
+                  <h1>Bem vindo!</h1>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="g-circle mx-auto d-block"> 
+                <h2>Acesse nosso wi-fi gratuitamente!</h2>
+                    
+            </div>
+        </div>
 
+        <div class="row"> 
+            <div class="col-4-sm">
+                  <div class="form-login">
+                  <div class="form-group">
+                      <input type="text" class="form-username form-control" name='username' id="auth_user" placeholder="Email" required>
+                    
+                </div>
+                <div class="form-group">
+                    <input type="password"  class="form-password form-control" name='password' id="password" maxlength="20" placeholder="Senha:" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-4-sm form-btn-entrar">
+                <div class="form-group">
+                    <button class="btnlogin btn btn-warning btn form-control" type="submit" name="submit" value="Cadastrar"> Entrar </button>
+                </div> 
+              </div>
+        
+        </div>
+        <div class="row linha-forgot">
+          <div class="rounded float-left">
+              <a href="" class="forgot">Esqueci minha senha</a>
+          </div>
+            
+        </div>
+    <table class="table">
+          <div class="row linha-cad">
+          <div class="g-circle mx-auto d-block">
+              <a class="btn btn-primary" href="#" role="button">Cadastrar</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="g-circle mx-auto d-block">
+            <h1>OU</h1>
+          </div>
+        </div>
+        <div class="row linha">
+          <div class="col-6 column-btn-google">
+              
+                  <a id="google-button" class="btn btn-block btn-social btn-google">
+                    <i class="fa fa-google"></i> Logar Google
+                  </a>
+                
+          </div>
+          <div class="col-6 column-btn-facebook">
+              
+                  <a class="btn btn-block btn-social btn-facebook">
+                    <span class="fa fa-facebook"></span> Logar Facebook
+                  </a>
+              
+          </div>
+          
+        </div>
+      </table>
+
+</div>
+      
+
+
+    
 
 </body>
-
 
 </html>

@@ -1,26 +1,133 @@
 body{
     background-color: #212121;
-    font-family: 'Montserrat', sans-serif !important;
-    height: 100%;
-    width: 100%;
+   
     
 }
-html{
-    height: 100%;
-    width: 100%;
-
-
-}
-
-.contentbox{
-    width: 50%;
-    height: 100%;
+.container-fluid{
+    width: 370px;
+    height: 750px;
     background: #333333;
-    margin: 0px auto;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  
     
+}
+
+h1{
+   
+    font-size: 18px; 
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif !important;
+
+    
+}
+h2{
+    font-family: 'Montserrat', sans-serif !important;
+    margin-top: -12px;
+    font-size: 23px;
+    text-align: center;
+    color: white;
+}
+
+.logo{
+    margin-top: 70px;
+    height: 100px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.btn-warning{
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f39c34;
+    border-color: #f39c34;
+    font-size: 16px;
+    color: #F8F8FF;
+    vertical-align: top;
+    
+}
+.btn-warning:hover{
+    background-color: #f0a953;
+    border-color: #f0a953;
+    
+}
+.col-4{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.form-group{
+    margin: 3px auto;
+}
+.form-btn-entrar{
+    margin-left: 15px auto;
+}
+
+.col-4-sm{
+    margin-top: 20px;
+}
+
+html {
+    
+    margin: 2px auto;
+    text-align: center;
+  }
+
+.row{
+    display: flex;
+    margin-right: 0 !important;
+    margin-left:  0  !important;
+}
+
+.btn-primary{
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f39c34;
+    border-color: #f39c34;
+    font-size: 16px;
+    color: #F8F8FF;
+    width: 333px;
+    height: 32px;
+}
+
+.btn-facebook{
+    width: 170px;
+    font-size: 14px
+    
+}
+.btn-google{
+    width: 170px;
+    font-size: 14px;
+    
+}
+
+.linha-cad{
+    margin-top: 40px;
+}
+.linha-forgot{
+    margin-top: 05px auto;
+}
+.forgot{
+    font-size: 12px;
+    font-weight: bold;
+}
+a{
+    color:#1E90FF ;
+}
+
+.column-btn-google{
+    margin-left: -10px;
+    color: white;
+}
+.column-btn-facebook{
+    margin-left: 5px;
+    color:white;
+}
+.btnlogin{
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 70px;
+    width: 75px;
 }
