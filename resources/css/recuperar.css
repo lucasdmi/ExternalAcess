@@ -26,11 +26,12 @@ h1{
     
 }
 h2{
-    font-family: 'Montserrat', sans-serif !important;
-    margin-top: -12px;
-    font-size: 23px;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0 auto;
+    font-size: 13px;
+    text-align: left;
     color: white;
+    
 }
 
 .logo{

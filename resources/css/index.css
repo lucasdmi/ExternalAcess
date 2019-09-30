@@ -12,7 +12,7 @@ body{
 
 h1{
    
-    font-size: 18px; 
+    font-size: 24px; 
     text-align: center;
     color: white;
     font-weight: bold;
@@ -82,14 +82,14 @@ html {
     margin-left:  0  !important;
 }
 
-.btn-primary{
+.btn-cad{
     font-family: 'Montserrat', sans-serif !important;
     background-color: #f39c34;
     border-color: #f39c34;
     font-size: 16px;
     color: #F8F8FF;
     width: 333px;
-    height: 32px;
+    height: 38px;
 }
 
 .btn-facebook{
@@ -118,16 +118,31 @@ a{
 }
 
 .column-btn-google{
-    margin-left: -10px;
+   
     color: white;
 }
 .column-btn-facebook{
-    margin-left: 5px;
+   
     color:white;
 }
 .btnlogin{
-    margin-left: 15px;
-    margin-top: 5px;
-    height: 70px;
-    width: 75px;
+   
+    margin-top: 8px;
+   
+}
+.col-md-12{
+    padding-right: 0px;
+
+    padding-left: 0px;
+}
+
+.col-md-6{
+    padding-right: 0px ;
+    padding-left: 0px;
+    padding-top: 20px;
+    color: white;
+}
+.btn-facebook{
+    margin-left: 4px;
+    width: 97%;
 }
