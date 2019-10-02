@@ -97,8 +97,8 @@ html {
     font-size: 14px
     
 }
-.btn-google{
-    width: 170px;
+.g-signin2{
+    width: 170px !important;
     font-size: 14px;
     
 }
@@ -146,3 +146,4 @@ a{
     margin-left: 4px;
     width: 97%;
 }
+

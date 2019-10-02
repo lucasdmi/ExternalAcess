@@ -13,18 +13,35 @@
   <link rel="stylesheet" type="text/css" href="resources/css/index.css" />
   <!-- Bootstrap 4 dependency -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <!-- bootbox code -->
   <script src="node_modules/bootbox/dist/bootbox.min.js"></script>
   <script src="node_modules/bootbox/dist/bootbox.locales.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer >  </script>
+<script>
+ $(document).on('pageInit', function (e) {
+  var teste = $("span[id^='connected'").html();
+    console.log(teste);
+});
+ function init(){
+    
+    alert('alooo');
+    var teste = $("span[id^='connected'").html("Conectado");
+    console.log(teste);
+    $("span[id^='not_connected'").html("Login Google");
+    }
 
+  
+</script>
+  
+</script>
+  <meta name="google-signin-client_id" content="363534844856-615gjk8mergcn0rnmn7gh59cj2cpdubq.apps.googleusercontent.com">
   <script src="resources/js/index.js"></script>
 
 </head>
 
-<body>
+<body onload="init()">
 
   <div class="container-fluid">
     <div class="row">
@@ -78,12 +95,10 @@
         
         <div class="row">
           <div class="col-md-6 ">
-
-            <a id="google-button" class="btn btn-block btn-social btn-google">
-              <i class="fa fa-google"></i> Logar Google
-            </a>
-
-          </div>
+                  
+      <div class="g-signin2"  data-width="170" data-height="36" data-onsuccess="onSignIn" data-theme="dark" > </div> 
+         <!-- <button class="teste" onclick="onSigIn()">Logar</button> -->
+        </div>
           <div class="col-md-6 ">
 
             <a class="btn btn-block btn-social btn-facebook">

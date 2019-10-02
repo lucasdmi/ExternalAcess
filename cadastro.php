@@ -40,6 +40,8 @@ if($query1 == 1){
 } 
 mysqli_close ($con);
 */
+
+exit;
 ?>
 
 
