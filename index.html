@@ -19,6 +19,10 @@
   <script src="node_modules/bootbox/dist/bootbox.min.js"></script>
   <script src="node_modules/bootbox/dist/bootbox.locales.min.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer >  </script>
+  <script src="resources/js/login-facebook.js"></script>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0"></script>
+
 <script>
  $(document).on('pageInit', function (e) {
   var teste = $("span[id^='connected'").html();
@@ -26,7 +30,6 @@
 });
  function init(){
     
-    alert('alooo');
     var teste = $("span[id^='connected'").html("Conectado");
     console.log(teste);
     $("span[id^='not_connected'").html("Login Google");
@@ -42,6 +45,8 @@
 </head>
 
 <body onload="init()">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=471234830400175&autoLogAppEvents=1"></script>
 
   <div class="container-fluid">
     <div class="row">
@@ -101,9 +106,17 @@
         </div>
           <div class="col-md-6 ">
 
-            <a class="btn btn-block btn-social btn-facebook">
-              <span class="fa fa-facebook"></span> Logar Facebook
-            </a>
+            <div class="column-btn-facebook">
+
+              <!-- <div class="fb-login-button" onclick="fbLogin()" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="true"></div> -->
+              <div id="status"></div>
+              
+                  <a class="btn btn-block btn-social btn-facebook"  href="javascript:void(0);" onclick="fbLogin()" id="fbLink">
+                    <span class="fa fa-facebook" ></span> Logar Facebook
+                  </a>
+                  <div id="userData"></div>
+              </div>
+            </div>
 
           </div>
 

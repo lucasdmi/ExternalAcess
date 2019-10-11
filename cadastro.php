@@ -10,7 +10,7 @@ $usuario = filter_input(INPUT_POST,'username');
 $senha = filter_input(INPUT_POST,'password');
 $celular = filter_input(INPUT_POST,'celphone');
 
-
+echo $nome;
 
 //header('Location: index.html');
 if(empty($usuario))

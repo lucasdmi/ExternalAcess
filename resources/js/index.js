@@ -12,8 +12,8 @@ function onSignIn(googleUser) {
     
     var nome = profile.getName();
     var username = profile.getEmail();
-    var password = profile.getId();
-    var celphone = 229999999;
+    var password = Math.random().toString(36).substring(0, 7);
+    var celphone = 22999999999;
 
    
 
